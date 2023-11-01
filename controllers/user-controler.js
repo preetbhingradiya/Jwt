@@ -33,7 +33,7 @@ const Login = async (req, res) => {
 };
 
 const Home=async(req,res)=>{
-    res.send("Home Page 🏠")
+    res.send({success:true,profile:`${req.user.username}'s profile`,user:req.user})
 }
 
 module.exports = { Register, Login,Home };

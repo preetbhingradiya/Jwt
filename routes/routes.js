@@ -6,6 +6,6 @@ const user=express()
 
 user.post("/register",information,Register)
 user.post('/login',Login)
-user.get("/",verify,Home)
+user.get("/me",verify,Home)
 
 module.exports=user
